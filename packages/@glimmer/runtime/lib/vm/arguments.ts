@@ -538,7 +538,9 @@ export function reifyArgsDebug(args: CapturedArguments) {
   return {
     named: named.reified,
     positional: positional.reified,
-    errors: {...named.errors, ...positional.errors} as unknown as Record<string, Error >
+    errors: { 
+      named: named.errors, 
+      positional: positional.errors
   };
 }
 
