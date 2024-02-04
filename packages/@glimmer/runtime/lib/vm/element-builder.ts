@@ -247,6 +247,40 @@ export class NewElementBuilder implements ElementBuilder {
 
   private pushModifiers(modifiers: Nullable<ModifierInstance[]>): void {
     this.modifierStack.push(modifiers);
+    if (!modifiers && this.env.debugRenderTree) {
+      const htmlState = {};
+      this.env.debugRenderTree?.create(htmlState, {
+        type: 'htmlTag',
+        name: this.element.localName,
+        args: {
+          named: this.element.attrs,
+          positional: []
+        },
+        instance: delegate                                  
+      });
+      for (const modifier of modifiers) {
+        const state = {};
+        const name = modifier.definition.resolvedName;
+        const delegate = modifier.manager.componentManagerDelegates.get(this.env.owner);
+        const element = modifier.state.element;
+        this.env.debugRenderTree?.create(state, {
+          type: 'modifier',
+          name,
+          args: modifier.state.args,
+          instance: delegate                                  
+        });
+        this.env.debugRenderTree?.didRender(state, {
+          parentElement: () => element.parentElement,
+          firstNode: () => element,
+          lastNode: () => element,
+        });
+      }
+      this.env.debugRenderTree?.didRender(htmlState, {
+          parentElement: () => element.parentElement,
+          firstNode: () => element,
+          lastNode: () => element,
+        });
+    }
   }
 
   private popModifiers(): Nullable<ModifierInstance[]> {
