@@ -26,6 +26,7 @@ import {
   TRUE_REFERENCE,
   UNDEFINED_REFERENCE,
   valueForRef,
+  createDebugAliasRef,
 } from '@glimmer/reference';
 import { assert, assign, debugToString, decodeHandle, isObject } from '@glimmer/util';
 import { $v0, CurriedTypes, Op } from '@glimmer/vm';
@@ -170,6 +171,11 @@ APPEND_OPCODES.add(Op.GetVariable, (vm, { op1: symbol }) => {
 
 APPEND_OPCODES.add(Op.SetVariable, (vm, { op1: symbol }) => {
   let expr = check(vm.stack.pop(), CheckReference);
+  if (import.meta.env.DEV) {
+    let state = vm.fetchValue($s0);
+    let symbols = state.table.symbols;
+    expr = createDebugAliasRef(`result of let ... as | ${symbols[symbol]} |`, expr);
+  }
   vm.scope().bindSymbol(symbol, expr);
 });
 
