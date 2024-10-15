@@ -37,29 +37,25 @@ jobs:
           paths: packages/
 
       - uses: wyvox/action-setup-pnpm@v3
-        if: steps.did-change.outputs.changed == 'true'
         with:
           node-version: '20.1.0'
 
       - name: RUN
-        if: steps.did-change.outputs.changed == 'true'
         env:
           NODE_OPTIONS: "--max-old-space-size=8192"
         run: pnpm run benchmark:setup
 
       - name: Remove unused artifacts
-        if: steps.did-change.outputs.changed == 'true'
         run: rm -rf ./tracerbench-results/traces && rm -rf ./tracerbench-results/traces.zip
 
       - name: Upload Tracerbench Artifacts
-        if: steps.did-change.outputs.changed == 'true' && (failure() || success())
+        if: (failure() || success())
         uses: actions/upload-artifact@v3
         with:
           name: Trace Artifacts
           path: tracerbench-results
 
       - name: Write message
-        if: steps.did-change.outputs.changed == 'true'
         uses: mshick/add-pr-comment@v2
         with:
           message-path: "tracerbench-results/msg.txt"
