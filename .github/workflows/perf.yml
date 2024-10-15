@@ -36,11 +36,6 @@ jobs:
         with:
           paths: packages/
 
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 129
-          install-chromedriver: true
-
       - uses: wyvox/action-setup-pnpm@v3
         with:
           node-version: '20.1.0'
