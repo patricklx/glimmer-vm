@@ -43,6 +43,8 @@ jobs:
 
       - name: RUN
         if: steps.did-change.outputs.changed == 'true'
+        env:
+          NODE_OPTIONS: "--max-old-space-size=8192"
         run: pnpm run benchmark:setup
 
       - name: Remove unused artifacts
