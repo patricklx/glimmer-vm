@@ -15,6 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  PUPPETEER_SKIP_DOWNLOAD: true
   EXPERIMENT_BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
   CONTROL_BRANCH_NAME: 'main'
   FIDELITY: 100
