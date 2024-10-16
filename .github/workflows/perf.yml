@@ -39,12 +39,11 @@ jobs:
 
       - uses: wyvox/action-setup-pnpm@v3
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: RUN
         env:
           NODE_OPTIONS: "--max-old-space-size=8192"
-          NODE_DEBUG: "*"
         run: pnpm run benchmark:setup
 
       - name: Remove unused artifacts
