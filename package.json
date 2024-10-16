@@ -123,8 +123,11 @@
   },
   "packageManager": "pnpm@8.5.0",
   "volta": {
-    "node": "20.9.0",
+    "node": "22.9.0",
     "pnpm": "8.5.0"
+  },
+  "pcr": {
+    "revision": "5866970"
   },
   "pnpm": {
     "overrides": {
