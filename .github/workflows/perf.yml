@@ -39,7 +39,7 @@ jobs:
 
       - uses: wyvox/action-setup-pnpm@v3
         with:
-          node-version: '20.1.0'
+          node-version: '22.9.0'
 
       - name: RUN
         env:
