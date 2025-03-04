@@ -1,0 +1,126 @@
+(node:2119) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Warning: unknown package "@glimmer-workspace/integration-tests"
+Warning: unknown package "@glimmer/debug"
+Warning: unknown package "@glimmer-workspace/bin"
+Warning: unknown package "@glimmer/local-debug-flags"
+Warning: unknown package "@glimmer-workspace/meta-updater"
+Warning: unknown package "@glimmer-workspace/bin"
+Warning: unknown package "@glimmer-workspace/benchmark-env"
+Warning: unknown package "@glimmer-workspace/build-support"
+Warning: unknown package "@glimmer-workspace/env"
+Warning: unknown package "@glimmer-workspace/eslint-plugin"
+Warning: unknown package "@glimmer-workspace/integration-tests"
+Warning: unknown package "@glimmer-workspace/test-utils"
+Warning: unknown package "@glimmer/constants"
+Warning: unknown package "@glimmer/debug-util"
+Warning: unknown package "@glimmer/debug"
+Warning: unknown package "@glimmer/local-debug-babel-plugin"
+Warning: unknown package "@glimmer/local-debug-flags"
+Warning: unknown package "@types/eslint-community__eslint-plugin-eslint-comments"
+Warning: unknown package "@types/eslint-plugin-import"
+Warning: unknown package "@types/eslint-plugin-qunit"
+Warning: unknown package "@types/js-reporters"
+Warning: unknown package "@types/puppeteer-chromium-resolver"
+Warning: unknown package "@glimmer-workspace/repo-metadata"
+Warning: unknown package "@glimmer-workspace/integration-tests"
+Warning: unknown package "@glimmer-workspace/repo-metadata"
+Warning: unknown package "@glimmer-workspace/build-support"
+Warning: unknown package "@glimmer-workspace/meta-updater"
+Warning: unknown package "@glimmer-workspace/benchmark-env"
+Warning: unknown package "@glimmer-workspace/bin"
+Warning: unknown package "@glimmer-workspace/env"
+Warning: unknown package "@glimmer-workspace/eslint-plugin"
+Warning: unknown package "@glimmer-workspace/integration-node-tests"
+Warning: unknown package "@glimmer-workspace/test-utils"
+Warning: unknown package "@glimmer/constants"
+Warning: unknown package "@glimmer/debug-util"
+Warning: unknown package "@glimmer/debug"
+Warning: unknown package "@glimmer/local-debug-babel-plugin"
+Warning: unknown package "@glimmer/local-debug-flags"
+Warning: unknown package "@types/eslint-community__eslint-plugin-eslint-comments"
+Warning: unknown package "@types/eslint-plugin-import"
+Warning: unknown package "@types/eslint-plugin-qunit"
+Warning: unknown package "@types/js-reporters"
+Warning: unknown package "@types/puppeteer-chromium-resolver"
+Warning: unknown package "@glimmer-workspace/bin"
+Warning: unknown package "@glimmer-workspace/meta-updater"
+Warning: unknown package "@glimmer-workspace/benchmark-env"
+Warning: unknown package "@glimmer-workspace/build-support"
+Warning: unknown package "@glimmer-workspace/eslint-plugin"
+Warning: unknown package "@glimmer-workspace/integration-node-tests"
+Warning: unknown package "@glimmer-workspace/integration-tests"
+Warning: unknown package "@glimmer-workspace/test-utils"
+Warning: unknown package "@glimmer/constants"
+Warning: unknown package "@glimmer/debug-util"
+Warning: unknown package "@glimmer/debug"
+Warning: unknown package "@glimmer/local-debug-flags"
+Warning: unknown package "@glimmer-workspace/repo-metadata"
+Warning: unknown package "@types/puppeteer-chromium-resolver"
+Warning: unknown package "@glimmer/local-debug-babel-plugin"
+Warning: unknown package "@types/js-reporters"
+# Unlabeled Changes
+
+* `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/interfaces`, `@glimmer/opcode-compiler`, `@glimmer/syntax`, `@glimmer/wire-format`
+  * [#1557](https://github.com/glimmerjs/glimmer-vm/pull/1557) [ENHANCEMENT+CLEANUP] Better compile time errors for strict mode ([@chancancode](https://github.com/chancancode))
+* `@glimmer-workspace/benchmark-env`, `@glimmer-workspace/integration-tests`, `@glimmer/interfaces`, `@glimmer/manager`, `@glimmer/runtime`
+  * [#1559](https://github.com/glimmerjs/glimmer-vm/pull/1559) add modifiers to debug render tree ([@patricklx](https://github.com/patricklx))
+* `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/interfaces`, `@glimmer/opcode-compiler`
+  * [#1574](https://github.com/glimmerjs/glimmer-vm/pull/1574) [CLEANUP] Drop support for `{{#with}}` keyword ([@chancancode](https://github.com/chancancode))
+* `@glimmer-workspace/integration-tests`, `@glimmer/interfaces`, `@glimmer/runtime`
+  * [#1492](https://github.com/glimmerjs/glimmer-vm/pull/1492) improve arguments error detection for inspector  ([@patricklx](https://github.com/patricklx))
+* `@glimmer-workspace/bin`
+  * [#1533](https://github.com/glimmerjs/glimmer-vm/pull/1533) Improve benchmark - adding more VM cases ([@lifeart](https://github.com/lifeart))
+  * [#1532](https://github.com/glimmerjs/glimmer-vm/pull/1532) Attempt to get perf testing work ([@lifeart](https://github.com/lifeart))
+* `@glimmer-workspace/benchmark-env`, `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/debug`, `@glimmer/destroyable`, `@glimmer/encoder`, `@glimmer/global-context`, `@glimmer/interfaces`, `@glimmer/manager`, `@glimmer/node`, `@glimmer/opcode-compiler`, `@glimmer/owner`, `@glimmer/program`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`, `@glimmer/vm`, `@glimmer/wire-format`
+  * [#1525](https://github.com/glimmerjs/glimmer-vm/pull/1525) Finish renaming master branch to main ([@chancancode](https://github.com/chancancode))
+* Other
+  * [#1524](https://github.com/glimmerjs/glimmer-vm/pull/1524) Revert some VSCode settings ([@chancancode](https://github.com/chancancode))
+  * [#1503](https://github.com/glimmerjs/glimmer-vm/pull/1503) Upgrade babel ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1457](https://github.com/glimmerjs/glimmer-vm/pull/1457) Add --force to pnpm publish to account for already published packages ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1455](https://github.com/glimmerjs/glimmer-vm/pull/1455) Match env var from https://github.com/actions/setup-node/blob/main/sr… ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1454](https://github.com/glimmerjs/glimmer-vm/pull/1454) debug npm access ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1453](https://github.com/glimmerjs/glimmer-vm/pull/1453) Setup dispatch / manual re-running of release workflow ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1448](https://github.com/glimmerjs/glimmer-vm/pull/1448) Setup release it  ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1365](https://github.com/glimmerjs/glimmer-vm/pull/1365) Define INUR in a comment ([@courajs](https://github.com/courajs))
+  * [#1307](https://github.com/glimmerjs/glimmer-vm/pull/1307) Remove TODO in ci.yml ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1239](https://github.com/glimmerjs/glimmer-vm/pull/1239) Fix changelog for version 0.71.2 ([@pzuraq](https://github.com/pzuraq))
+* `@glimmer/runtime`
+  * [#1512](https://github.com/glimmerjs/glimmer-vm/pull/1512) [perf | size] simplify array iterations ([@lifeart](https://github.com/lifeart))
+* `@glimmer-workspace/eslint-plugin`, `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/debug`, `@glimmer/interfaces`, `@glimmer/manager`, `@glimmer/opcode-compiler`, `@glimmer/reference`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`
+  * [#1505](https://github.com/glimmerjs/glimmer-vm/pull/1505) Upgrade lint dependencies ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/bin`, `@glimmer-workspace/build-support`, `@glimmer-workspace/eslint-plugin`, `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/node`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`
+  * [#1504](https://github.com/glimmerjs/glimmer-vm/pull/1504) Upgrade @types/* ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/build-support`, `@glimmer/vm-babel-plugins`
+  * [#1502](https://github.com/glimmerjs/glimmer-vm/pull/1502) Lint and config changes extraction part two ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/bin`, `@glimmer-workspace/benchmark-env`, `@glimmer-workspace/build-support`, `@glimmer-workspace/eslint-plugin`, `@glimmer-workspace/integration-tests`, `@glimmer/compiler`, `@glimmer/debug`, `@glimmer/destroyable`, `@glimmer/interfaces`, `@glimmer/local-debug-flags`, `@glimmer/manager`, `@glimmer/node`, `@glimmer/opcode-compiler`, `@glimmer/program`, `@glimmer/reference`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`, `@glimmer/validator`, `@glimmer/vm-babel-plugins`
+  * [#1500](https://github.com/glimmerjs/glimmer-vm/pull/1500) Extract formatting / lint changes from the Error Recovery PR, and add prettier to ci / local tooling ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/build-support`
+  * [#1477](https://github.com/glimmerjs/glimmer-vm/pull/1477) Use terser for the production bundle ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/integration-tests`, `@glimmer/node`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`
+  * [#1456](https://github.com/glimmerjs/glimmer-vm/pull/1456) Can we use the real @types/qunit? ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+* `@glimmer-workspace/integration-tests`, `@glimmer/runtime`
+  * [#1447](https://github.com/glimmerjs/glimmer-vm/pull/1447) fix: capture render tree can fail if args cannot be obtained ([@patricklx](https://github.com/patricklx))
+* `@glimmer/manager`
+  * [#1370](https://github.com/glimmerjs/glimmer-vm/pull/1370) Refactor the way manager is returned so that we don't need exclamation ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1364](https://github.com/glimmerjs/glimmer-vm/pull/1364) Correct grammar in immutable args error ([@jamescdavis](https://github.com/jamescdavis))
+* `@glimmer/util`
+  * [#1366](https://github.com/glimmerjs/glimmer-vm/pull/1366) drop support for IE11 ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+  * [#1193](https://github.com/glimmerjs/glimmer-vm/pull/1193) [BUGFIX] Use custom symbol whenever native is not present ([@pzuraq](https://github.com/pzuraq))
+* `@glimmer/local-debug-flags`, `@glimmer/reference`
+  * [#1353](https://github.com/glimmerjs/glimmer-vm/pull/1353) Update package.json to include the repository ([@v-jiepeng](https://github.com/v-jiepeng))
+* `@glimmer/compiler`
+  * [#1354](https://github.com/glimmerjs/glimmer-vm/pull/1354) Followup for loose-mode lexical scope ([@ef4](https://github.com/ef4))
+* `@glimmer/interfaces`, `@glimmer/manager`
+  * [#1334](https://github.com/glimmerjs/glimmer-vm/pull/1334) cleanup 3.13 logic from Modifier Manager ([@nlfurniss](https://github.com/nlfurniss))
+* `@glimmer/validator`
+  * [#1291](https://github.com/glimmerjs/glimmer-vm/pull/1291) Add repository metadata to glimmer validator package ([@milindalvares](https://github.com/milindalvares))
+* `@glimmer/compiler`, `@glimmer/syntax`
+  * [#1203](https://github.com/glimmerjs/glimmer-vm/pull/1203) Update syntax errors to not be a custom subclass ([@pzuraq](https://github.com/pzuraq))
+* `@glimmer/compiler`, `@glimmer/debug`, `@glimmer/encoder`, `@glimmer/global-context`, `@glimmer/interfaces`, `@glimmer/local-debug-flags`, `@glimmer/node`, `@glimmer/opcode-compiler`, `@glimmer/program`, `@glimmer/reference`, `@glimmer/runtime`, `@glimmer/syntax`, `@glimmer/util`, `@glimmer/validator`, `@glimmer/vm`, `@glimmer/wire-format`
+  * [#1194](https://github.com/glimmerjs/glimmer-vm/pull/1194) Upstream Release 0.63.5 ([@pzuraq](https://github.com/pzuraq))
+* `@glimmer/opcode-compiler`
+  * [#1163](https://github.com/glimmerjs/glimmer-vm/pull/1163) [BUGFIX] args lost when passed to {{component}} ([@rreckonerr](https://github.com/rreckonerr))
+
+
+*Cannot plan release until the above changes are labeled*.
