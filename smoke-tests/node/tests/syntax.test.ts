@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('@glimmer/syntax', () => {
   it('process()', () => {
-    expect(preprocess('<h1></h1>')).toMatchInlineSnapshot(`
+    expect(preprocess('<h1 style=""></h1>')).toMatchInlineSnapshot(`
       {
         "blockParams": [],
         "body": [
